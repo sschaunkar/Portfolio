@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Header CSS */
+#header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("./img/office1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.user-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.user-box img {
+  border-radius: 50%;
+  width: 250px;
+  border: 2px solid;
+}
+.user-box h1 {
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+.user-box p {
+  color: #fff;
+}
+.scroll-btn {
+  bottom: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  padding: 10px 10px 20px;
+  border-radius: 30px;
+}
+.scroll-bar span {
+  border: 2px solid #fff;
+  font-size: 10px;
+  border-radius: 30px;
+}
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+/* --------------About------------------ */
+.about {
+  padding-top: 100px;
+  margin-bottom: -50px;
+}
+.profile-img {
+  width: 100%;
+  height: auto;
+}
+.nav-bar {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+.navbar {
+  background-color: #000;
+}
+.navbar-brand img {
+  height: 50px;
+}
+.nav-bar .fa-bars {
+  font-size: 35px;
+  color: #fff;
+}
+.navbar-toggler {
+  outline: none !important;
+}
+.navbar-nav {
+  float: right;
+  text-align: right;
+}
+.nav-link {
+  color: #fff !important;
+}
+.skills-bar p {
+  margin-bottom: 6px;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.intro-headind {
+  margin-left: 1rem;
+}
+.intro {
+  margin-left: 1rem;
+  font-weight: bolder;
+}
+p.intro {
+  text-align: justify;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.progress {
+  border-radius: 16px !important;
+  margin-bottom: 10px;
+  margin-left: 1rem;
+}
+.progress-bar {
+  border-radius: 16px;
+  background: #000 !important;
+}
+.resume {
+  margin-top: -150px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background: #f9f9f9;
+}
+.resume h3 {
+  margin-bottom: 50px;
+}
+.timeline {
+  list-style-type: none;
+  position: relative;
+}
+.timeline:before {
+  content: "";
+  background: #555;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
+}
+.timeline li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background: rgb(202, 193, 193);
+}
+.timeline li h4 {
+  background-color: #000;
+  padding: 5px 0 5px 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.timeline li h4 span {
+  font-weight: bold;
+  color: #ccc;
+}
+.timeline li p {
+  margin-left: 10px;
+}
+.timeline li::before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #000;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+/* --------------------------------------Services ---------------------------------- */
+div#services {
+  padding-top: 40px;
+}
+.services-box {
+  background: #c0b9b9;
+  padding: 10px;
+  margin-top: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.services-box .fa {
+  margin: 0 10px;
+  font-size: 20px;
+}
+.services-box span {
+  margin: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.services-box p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+.services-box:hover {
+  background: #000;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 1s;
+}
+.services-box:hover p {
+  color: #fff;
+}
+/* ----------------Contact----------------- */
+.contact {
+  padding-top: 50px;
+  margin-top: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url('./img/office2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+.contact row {
+  padding: 30px 0;
+  font-size: 22px;
+}
+.contact .col-md-4 .fa {
+  padding: 10px;
+  font-size: 40px;
+}
+.contact .btn {
+  padding: 10px 25px 10px 25px;
+  margin: 5px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  background: transparent;
+}
+.contact .btn:focus {
+  box-shadow: none !important;
+}
+.contact .btn:hover {
+  border: 2px solid #000 !important;
+  background: #000 !important;
+  transition: 0.6s;
+}
+.contact .btn .fa {
+  margin-right: 10px;
+}
+.footer {
+  background: #000;
+  height: 50px;
+  margin-top: 50px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.social-icons {
+  top: 50%;
+  transform: translateY(-50%);
+  position: sticky;
+  z-index: 1;
+  width: 80px;
+  margin-top: 200px;
+}
+.social-icons ul {
+  padding: initial;
+}
+.social-icons ul li {
+  height: 40px;
+  width: 40px;
+  list-style-type: none;
+  padding-left: 12px;
+  padding-top: 6px;
+  margin-top: 5px;
+  color: #fff;
+  background: #000;
+}
+.social-icons ul li:hover {
+  padding-left: 30px;
+  width: 80px;
+  transition: 1s;
+}
+/* -------------------------------Projects-------------------------*/
+div#projects {
+  padding-top: 10px;
+}
+.project-box {
+  background: #c0b9b9;
+  padding: 20px;
+  margin-top: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.project-box .fa {
+  margin: 0 10px;
+  font-size: 20px;
+}
+.project-box span {
+  margin: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.project-box p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+.project-box:hover {
+  background: #000;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 1s;
+}
+.project-box:hover p {
+  color: #fff;
+}
+.project-box img {
+  width: 400px;
+  height: 250px;
+}
+/* ------------------------------Skill Logos------------------------------------ */
+.logo {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  width: 24px;
+  height: 24px;
+}
+/* --------------------------------Text Slider-------------------------------- */
+.slider-wrapper {
+  font-size: 40px;
+  color: #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: unset;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 50px;
+  padding-left: 15px;
+  overflow: hidden;
+}
+.slider div {
+  color: #fff;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 2px 15px;
+  box-sizing: border-box;
+}
+.slider-text-1 {
+  background: skyblue;
+  animation: slide 5s linear infinite;
+}
+.slider-text-2 {
+  background: lightgreen;
+}
+.slider-text-3 {
+  background: red;
+}
+.slider-text-4 {
+  background: chartreuse;
+}
+.slider-text-5 {
+  background: blueviolet;
+}
+@keyframes slide {
+  0% {
+    margin-top: -500px;
+  }
+  5% {
+    margin-top: -400px;
+  }
+  20% {
+    margin-top: -400px;
+  }
+  25% {
+    margin-top: -300px;
+  }
+  40% {
+    margin-top: -300px;
+  }
+  45% {
+    margin-top: -200px;
+  }
+  50% {
+    margin-top: -200px;
+  }
+  55% {
+    margin-top: -100px;
+  }
+  80% {
+    margin-top: -100px;
+  }
+  85% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
